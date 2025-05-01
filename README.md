@@ -101,9 +101,9 @@ O buscador de carros será monetizado através de um modelo freemium com as segu
 - **Programa de Fidelidade**: Pontos por interações
 - **Eventos Exclusivos**: Test-drives e lançamentos
 
-## 📸 Screenshots
+## 📸 Link de acesso
 
-[Adicionar screenshots da aplicação em funcionamento]
+https://vercel.com/emanuels-projects-4f94c5b1/garagem-digital
 
 ## 🤝 Contribuição
 
