@@ -48,14 +48,17 @@ export default function Home() {
 
   return (
     <main className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-      {/* Header */}
-      <div className="max-w-7xl mx-auto mb-16 text-center">
-        <h1 className="text-5xl font-bold mb-6 text-gradient">
-          Encontre seu próximo carro
-        </h1>
-        <p className="text-lg text-[rgb(var(--text-secondary))] max-w-2xl mx-auto">
-          Explore nossa seleção de carros premium e encontre o veículo perfeito para você
-        </p>
+      {/* Hero Header */}
+      <div className="max-w-7xl mx-auto mb-16">
+        <div className="text-center space-y-8">
+          <h1 className="text-6xl sm:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-gradient">
+            Encontre seu próximo carro
+          </h1>
+          <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+            Explore nossa seleção de carros premium e encontre o veículo perfeito para você
+          </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 mx-auto rounded-full"></div>
+        </div>
       </div>
 
       {/* Search Form */}

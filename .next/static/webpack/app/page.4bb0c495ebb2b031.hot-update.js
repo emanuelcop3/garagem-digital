@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/page",{
+
+/***/ "(app-pages-browser)/./src/data/cars.json":
+/*!****************************!*\
+  !*** ./src/data/cars.json ***!
+  \****************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = /*#__PURE__*/JSON.parse('[{"Name":"BYD","Model":"Dolphin","Image":"./src/assets/images/cars/byd-dolphin.jpg","Price":99990,"Location":"São Paulo","Description":"O BYD Dolphin é um carro elétrico compacto com design moderno e tecnologia avançada. Possui autonomia de 300km e carregamento rápido."},{"Name":"Toyota","Model":"Corolla","Image":"/images/cars/toyota-corolla.jpg","Price":112000,"Location":"São Paulo","Description":"O Toyota Corolla é um sedã médio com excelente custo-benefício, conforto e durabilidade. Motor 2.0 com câmbio CVT."},{"Name":"Volkswagen","Model":"T-Cross","Image":"/images/cars/volkswagen-t-cross.jpg","Price":118500,"Location":"Campinas","Description":"SUV compacto com design jovem e espaço interno surpreendente. Motor 1.0 TSI com excelente desempenho e economia."},{"Name":"Honda","Model":"Civic","Image":"/images/cars/honda-civic.jpg","Price":105000,"Location":"Rio de Janeiro","Description":"O Honda Civic é um sedã esportivo com design arrojado e tecnologia de ponta. Motor 1.5 Turbo com 173cv."},{"Name":"Chevrolet","Model":"Onix","Image":"/images/cars/chevrolet-onix.jpg","Price":85000,"Location":"Belo Horizonte","Description":"Hatch compacto com design moderno e tecnologia. Motor 1.0 Turbo com 116cv e câmbio automático de 6 marchas."},{"Name":"Hyundai","Model":"HB20","Image":"/images/cars/hyundai-hb20.jpg","Price":79000,"Location":"São Paulo","Description":"Hatch compacto com design jovem e tecnologia. Motor 1.0 Turbo com 120cv e câmbio automático de 6 marchas."},{"Name":"Renault","Model":"Kwid","Image":"/images/cars/renault-kwid.jpg","Price":68990,"Location":"Curitiba","Description":"SUV compacto com design arrojado e preço acessível. Motor 1.0 com 70cv e câmbio manual de 5 marchas."},{"Name":"Fiat","Model":"Pulse","Image":"/images/cars/fiat-pulse.jpg","Price":96000,"Location":"São Paulo","Description":"SUV compacto com design moderno e tecnologia. Motor 1.0 Turbo com 130cv e câmbio CVT."},{"Name":"Jeep","Model":"Renegade","Image":"/images/cars/jeep-renegade.jpg","Price":122000,"Location":"Porto Alegre","Description":"SUV com design robusto e capacidade off-road. Motor 1.3 Turbo com 185cv e tração 4x4."},{"Name":"Peugeot","Model":"208","Image":"/images/cars/peugeot-208.jpg","Price":99990,"Location":"São Paulo","Description":"O novo Peugeot 208 redefine o conceito de sofisticação com seu design futurista e tecnologia de ponta. Equipado com o i-Cockpit® 3D, motor Turbo THP de 130cv, câmbio automático de 6 marchas e sistemas avançados de assistência à condução."}]');
+
+/***/ })
+
+});
