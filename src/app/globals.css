@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Core colors */
+  --primary: 79, 70, 229;    /* Indigo */
+  --primary-light: 99, 102, 241;
+  --secondary: 236, 72, 153;  /* Pink */
+  --accent: 249, 115, 22;    /* Orange */
+  
+  /* Background colors */
+  --bg-gradient-start: 246, 248, 252;
+  --bg-gradient-end: 250, 251, 254;
+  
+  /* Surface colors */
+  --surface-white: 252, 253, 255;
+  --surface-light: 248, 250, 254;
+  --surface-lighter: 244, 247, 252;
+  
+  /* Text colors */
+  --text-primary: 30, 41, 59;
+  --text-secondary: 71, 85, 105;
+  --text-light: 148, 163, 184;
+}
+
+body {
+  color: rgb(var(--text-primary));
+  background: linear-gradient(
+    135deg,
+    rgb(var(--bg-gradient-start)),
+    rgb(var(--bg-gradient-end))
+  );
+  min-height: 100vh;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+/* Custom utility classes */
+.bg-gradient-custom {
+  background: linear-gradient(135deg, rgb(var(--primary)), rgb(var(--secondary)));
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, rgb(var(--primary)), rgb(var(--secondary)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hover-gradient:hover {
+  background: linear-gradient(135deg, rgb(var(--primary-light)), rgb(var(--secondary)));
+}
+
+.card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(var(--primary), 0.1);
+}
+
+/* Surface styles */
+.bg-surface {
+  background-color: rgb(var(--surface-white));
+}
+
+.bg-surface-light {
+  background-color: rgb(var(--surface-light));
+}
+
+.bg-surface-lighter {
+  background-color: rgb(var(--surface-lighter));
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: all 0.3s ease;
+  background-color: rgb(var(--surface-white));
+}
+
+.card-hover:hover {
+  background-color: rgb(var(--surface-light));
+  transform: translateY(-2px);
+} 
