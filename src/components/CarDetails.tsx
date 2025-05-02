@@ -87,7 +87,7 @@ export default function CarDetails({ car, onClose }: CarDetailsProps) {
                 <h3 className="text-xl font-semibold text-[rgb(var(--text-primary))] mb-3">
                   Descrição
                 </h3>
-                <p className="text-[rgb(var(--text-secondary))] leading-relaxed">
+                <p className="text-black leading-relaxed">
                   {car.Description}
                 </p>
               </div>
