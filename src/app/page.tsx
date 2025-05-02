@@ -48,10 +48,18 @@ export default function Home() {
 
   return (
     <main className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+      {/* Logo no topo */}
+      <div className="max-w-7xl mx-auto mb-8">
+        <div className="text-center">
+          <span className="inline-block text-4xl sm:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[rgb(var(--secondary))] via-[rgb(var(--accent))] to-[rgb(var(--primary))] animate-gradient">
+            Garagem Digital + Klubi Consórcio
+          </span>
+        </div>
+      </div>
       {/* Hero Header */}
       <div className="max-w-7xl mx-auto mb-16">
         <div className="text-center space-y-8">
-          <h1 className="text-6xl sm:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-gradient">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-gradient">
             Encontre seu próximo carro
           </h1>
           <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
