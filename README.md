@@ -1,4 +1,4 @@
-# 🚗 Buscador de Carros
+# 🚗 Conheça o Garagem Digital o novo buscador de carros da Klubi Consórcios
 
 Uma aplicação web moderna para busca e comparação de carros, desenvolvida com Next.js, TypeScript e Tailwind CSS.
 
@@ -49,6 +49,7 @@ http://localhost:3000
 - 🤖 Chatbot inteligente (DeepSeek)
 - 📱 Design responsivo
 - ⚡ Performance otimizada
+- - 🤖 Chatbot whatsApp
 
 ## 💼 Plano de Negócios
 
@@ -113,9 +114,6 @@ O buscador de carros será monetizado através de um modelo freemium com as segu
 
 https://garagem-digital-seven.vercel.app/
 
-## 🤝 Contribuição
-
-Contribuições são bem-vindas! Por favor, leia o guia de contribuição antes de enviar um pull request.
 
 ## 📄 Licença
 
