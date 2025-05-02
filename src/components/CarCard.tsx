@@ -65,7 +65,7 @@ export default function CarCard({ car }: CarCardProps) {
               {car.Name} {car.Model}
             </h3>
             <div className="flex items-center space-x-2">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-lighter text-[rgb(var(--primary))]">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[rgb(var(--accent))] text-gray-900 shadow-md">
                 {car.Location}
               </span>
             </div>
