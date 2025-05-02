@@ -2,6 +2,12 @@
 
 Uma aplicação web moderna para busca e comparação de carros, desenvolvida com Next.js, TypeScript e Tailwind CSS.
 
+## ✨ Novidades
+
+- **🤖 Chatbot inteligente:** Assistente virtual integrado com a API DeepSeek, capaz de responder dúvidas sobre carros, dar sugestões e manter o contexto da conversa.
+- **🎨 Visual moderno:** Paleta de cores inspirada em carros premium e esportivos, com destaque para detalhes em vermelho, amarelo neon e azul metálico.
+- **💬 Experiência aprimorada:** Interface responsiva, botões de sugestões rápidas, animação de digitação, avatares e feedback visual.
+
 ## 🚀 Como rodar o projeto
 
 1. Clone o repositório:
@@ -32,6 +38,7 @@ http://localhost:3000
 - Tailwind CSS
 - React Hooks
 - Next.js Image Optimization
+- **DeepSeek API** (chatbot inteligente)
 
 ## 📱 Funcionalidades
 
@@ -39,6 +46,7 @@ http://localhost:3000
 - 📍 Filtro por localização
 - 💰 Filtro por preço máximo
 - 🎯 Sugestões de carros similares
+- 🤖 Chatbot inteligente (DeepSeek)
 - 📱 Design responsivo
 - ⚡ Performance otimizada
 
