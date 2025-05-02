@@ -29,13 +29,15 @@ export default function CarCard({ car }: CarCardProps) {
         {/* Image container */}
         <div className="relative h-56 w-full bg-surface-lighter overflow-hidden">
           <div className="absolute inset-0 flex items-center justify-center">
-            <Image
-              src="/images/cars/placeholder-car.svg"
-              alt="Car placeholder"
-              fill
-              className="object-contain p-8"
-              priority={true}
-            />
+            {imageError && (
+              <Image
+                src="/images/cars/placeholder-car.svg"
+                alt="Car placeholder"
+                fill
+                className="object-contain p-8"
+                priority={true}
+              />
+            )}
           </div>
           {!imageError && (
             <Image
