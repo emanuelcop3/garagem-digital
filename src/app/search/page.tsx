@@ -1,0 +1,3 @@
+import { Car } from '@/types/car';
+
+// ... existing code ... 
