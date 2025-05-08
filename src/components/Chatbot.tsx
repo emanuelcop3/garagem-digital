@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { processMessage } from '@/services/chatbotService';
-import { Car } from '../types/car';
+import { Car } from '@/types/car';
 
 const SUGGESTIONS = [
   'Mostre os carros mais baratos',
