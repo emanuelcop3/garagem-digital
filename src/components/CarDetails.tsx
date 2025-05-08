@@ -84,11 +84,9 @@ export default function CarDetails({ car, onClose }: CarDetailsProps) {
 
               {/* Description */}
               <div>
-                <h3 className="text-xl font-semibold text-[rgb(var(--text-primary))] mb-3">
-                  Descrição
-                </h3>
+                <h3 className="text-xl font-semibold mb-2">Descrição</h3>
                 <p className="text-black leading-relaxed">
-                  {car.Description}
+                  {car.Description || 'Descrição não disponível.'}
                 </p>
               </div>
             </div>
