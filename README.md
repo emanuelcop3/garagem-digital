@@ -1,120 +1,164 @@
-# 🚗 Conheça o Garagem Digital o novo buscador de carros da Klubi Consórcios
+# Garagem Digital
 
-Uma aplicação web moderna para busca e comparação de carros, desenvolvida com Next.js, TypeScript e Tailwind CSS.
+Uma aplicação web moderna para busca e comparação de veículos, desenvolvida com Next.js 14, TypeScript e Tailwind CSS.
 
-## ✨ Novidades
+## 🚀 Tecnologias
 
-- **🤖 Chatbot inteligente:** Assistente virtual integrado com a API DeepSeek, capaz de responder dúvidas sobre carros, dar sugestões e manter o contexto da conversa.
-- **🎨 Visual moderno:** Paleta de cores inspirada em carros premium e esportivos, com destaque para detalhes em vermelho, amarelo neon e azul metálico.
-- **💬 Experiência aprimorada:** Interface responsiva, botões de sugestões rápidas, animação de digitação, avatares e feedback visual.
+- **Next.js 14** - Framework React com App Router e Server Components
+- **TypeScript** - Tipagem estática e melhor DX
+- **Tailwind CSS** - Framework CSS utilitário
+- **React** - Biblioteca UI
+- **ESLint** - Linting e formatação de código
+- **Prettier** - Formatador de código
 
-## 🚀 Como rodar o projeto
+## 🛠️ Arquitetura
+
+```
+src/
+├── app/                 # App Router e páginas
+├── components/          # Componentes React reutilizáveis
+├── data/               # Dados estáticos e interfaces
+├── services/           # Serviços e lógica de negócio
+└── types/              # Definições de tipos TypeScript
+```
+
+## 🔍 Funcionalidades
+
+### Busca Avançada
+- Filtros por marca, modelo e características
+- Busca por localização
+- Filtro por faixa de preço
+- Seleção múltipla de marcas
+- Debounce de 300ms para otimização de performance
+
+### Chatbot Inteligente
+- Processamento de linguagem natural
+- Reconhecimento de padrões para:
+  - Consultas de preço
+  - Busca por localização
+  - Filtros por marca
+  - Carros mais baratos/caros
+- Sugestões contextuais
+- Interface responsiva e moderna
+
+### UI/UX
+- Design system consistente
+- Tema escuro moderno
+- Gradientes e efeitos visuais
+- Animações suaves
+- Layout responsivo
+- Feedback visual em tempo real
+
+## 🚀 Instalação
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/buscador-carros.git
-cd buscador-carros
+git clone https://github.com/seu-usuario/garagem-digital.git
 ```
 
 2. Instale as dependências:
 ```bash
 npm install
+# ou
+yarn install
+# ou
+pnpm install
 ```
 
-3. Inicie o servidor de desenvolvimento:
+3. Execute o servidor de desenvolvimento:
 ```bash
 npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
 ```
 
-4. Acesse a aplicação em:
-```
-http://localhost:3000
-```
+4. Acesse `http://localhost:3000`
 
-## 🛠️ Tecnologias utilizadas
+## 📦 Scripts Disponíveis
 
-- Next.js 14
-- TypeScript
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Gera a build de produção
+- `npm run start` - Inicia o servidor de produção
+- `npm run lint` - Executa o linter
+- `npm run format` - Formata o código com Prettier
+
+## 🧪 Padrões de Código
+
+- ESLint para linting
+- Prettier para formatação
+- TypeScript para tipagem estática
+- Componentes funcionais com hooks
+- Props tipadas com interfaces
+- Nomenclatura consistente
+
+## 🔄 Fluxo de Dados
+
+1. **Busca**
+   - Input do usuário → Debounce → Filtragem → Renderização
+   - Cache de resultados para otimização
+
+2. **Chatbot**
+   - Input do usuário → Processamento NLP → Resposta → UI
+   - Sugestões contextuais baseadas no histórico
+
+## 🎨 Design System
+
+### Cores
+- Gradientes: `from-indigo-900 via-purple-900 to-pink-900`
+- Fundo: `bg-gray-900`
+- Texto: `text-gray-200`
+- Destaque: `text-purple-300`
+
+### Componentes
+- Cards com bordas e sombras
+- Inputs com estados de foco
+- Botões com gradientes
+- Animações de transição
+
+## 📱 Responsividade
+
+- Mobile-first approach
+- Breakpoints:
+  - sm: 640px
+  - md: 768px
+  - lg: 1024px
+  - xl: 1280px
+
+## 🔒 Segurança
+
+- Validação de inputs
+- Sanitização de dados
+- Proteção contra XSS
+- Rate limiting
+
+## 📈 Performance
+
+- Lazy loading de componentes
+- Otimização de imagens
+- Debounce em buscas
+- Cache de resultados
+- Server-side rendering
+
+## 🤝 Contribuição
+
+1. Fork o projeto
+2. Crie sua branch (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👥 Autores
+
+- Seu Nome - [@seu-usuario](https://github.com/seu-usuario)
+
+## 🙏 Agradecimentos
+
+- Next.js Team
 - Tailwind CSS
-- React Hooks
-- Next.js Image Optimization
-- **DeepSeek API** (chatbot inteligente)
-
-## 📱 Funcionalidades
-
-- 🔍 Busca por nome, modelo ou descrição
-- 📍 Filtro por localização
-- 💰 Filtro por preço máximo
-- 🎯 Sugestões de carros similares
-- 🤖 Chatbot inteligente (DeepSeek)
-- 📱 Design responsivo
-- ⚡ Performance otimizada
-- - 🤖 Chatbot whatsApp
-
-## 💼 Plano de Negócios
-
-### 1. Modelo de Negócios
-
-O buscador de carros será monetizado através de um modelo freemium com as seguintes características:
-
-- **Versão Gratuita**: Busca básica e visualização de carros
-- **Versão Premium**: Recursos avançados como:
-  - Alertas de preço
-  - Comparação detalhada
-  - Histórico de preços
-  - Agendamento de test-drive
-  - Acesso a concessionárias parceiras
-
-### 2. Estratégia de Aquisição de Usuários
-
-- **Marketing de Conteúdo**: Blog com dicas de compra de carros
-- **SEO**: Otimização para termos de busca relacionados a carros
-- **Parcerias**: Integração com concessionárias e seguradoras
-- **Redes Sociais**: Conteúdo visual e interativo sobre carros
-- **Referral Program**: Sistema de indicação com benefícios
-
-### 3. CAC (Custo de Aquisição de Cliente)
-
-- **CAC Inicial**: R$ 50-100 por usuário
-- **Estratégias de Redução**:
-  - Otimização de canais de aquisição
-  - Automação de marketing
-  - Parcerias estratégicas
-  - Programa de indicação
-
-### 4. LTV (Lifetime Value) e Maximização
-
-- **LTV Estimado**: R$ 300-500 por usuário
-- **Estratégias de Maximização**:
-  - Upselling para versão premium
-  - Serviços adicionais (seguros, financiamento)
-  - Marketplace de acessórios
-  - Programa de fidelidade
-
-### 5. Monetização
-
-- **Assinatura Premium**: R$ 29,90/mês
-- **Comissão por Venda**: 1-2% do valor do carro
-- **Anúncios Contextuais**: Parcerias com marcas relacionadas
-- **Serviços Adicionais**:
-  - Seguro
-  - Financiamento
-  - Acessórios
-  - Manutenção
-
-### 6. Estratégia de Retenção
-
-- **Notificações Personalizadas**: Alertas de preço e novos modelos
-- **Conteúdo Exclusivo**: Reviews e análises técnicas
-- **Comunidade**: Fórum de discussão e avaliações
-- **Programa de Fidelidade**: Pontos por interações
-- **Eventos Exclusivos**: Test-drives e lançamentos
-
-## 📸 Link de acesso
-
-https://garagem-digital-seven.vercel.app/
-
-
-## 📄 Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes. 
+- React Community
