@@ -1,5 +1,5 @@
 import { cars } from '../data/cars';
-import { Car } from '../data/cars';
+import { Car } from '../types/car';
 
 export interface ChatbotResponse {
   message: string;
