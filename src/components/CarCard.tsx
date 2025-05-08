@@ -1,17 +1,21 @@
 'use client';
 
-import { useState } from 'react';
+import React from 'react';
 import { Car } from '@/types/car';
 import Image from 'next/image';
 import CarDetails from './CarDetails';
 
 interface CarCardProps {
-  car: Car;
+  car: Car & {
+    highlightedName?: string;
+    highlightedModel?: string;
+    highlightedLocation?: string;
+  };
 }
 
 export default function CarCard({ car }: CarCardProps) {
-  const [imageError, setImageError] = useState(false);
-  const [showDetails, setShowDetails] = useState(false);
+  const [imageError, setImageError] = React.useState(false);
+  const [showDetails, setShowDetails] = React.useState(false);
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('pt-BR', {
@@ -62,18 +66,18 @@ export default function CarCard({ car }: CarCardProps) {
           {/* Title and badges */}
           <div className="space-y-2">
             <h3 className="text-2xl font-bold text-[rgb(var(--text-primary))] group-hover:text-gradient transition-all duration-300">
-              {car.Name} {car.Model}
+              <span dangerouslySetInnerHTML={{ __html: car.highlightedName || car.Name }} />
             </h3>
             <div className="flex items-center space-x-2">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[rgb(var(--accent))] text-gray-900 shadow-md">
-                {car.Location}
+                <span dangerouslySetInnerHTML={{ __html: car.highlightedLocation || car.Location }} />
               </span>
             </div>
           </div>
           
           {/* Description */}
           <p className="mt-3 text-[rgb(var(--text-secondary))] text-sm line-clamp-2 group-hover:line-clamp-none transition-all duration-300">
-            {car.Description}
+            <span dangerouslySetInnerHTML={{ __html: car.highlightedModel || car.Model }} />
           </p>
           
           {/* Action buttons */}

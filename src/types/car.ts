@@ -4,7 +4,9 @@ export interface Car {
   Image: string;
   Price: number;
   Location: string;
-  Description: string;
+  highlightedName?: string;
+  highlightedModel?: string;
+  highlightedLocation?: string;
 }
 
 export interface CarSearchParams {
